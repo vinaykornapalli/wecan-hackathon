@@ -10,11 +10,11 @@
 :: 1.0 Base CSS
 :: 2.0 Top Header Area CSS
 :: 3.0 Menu Area CSS
-:: 4.0 Wellcome Area CSS 
-:: 5.0 Top Feature Area CSS 
-:: 6.0 Blog Area CSS 
-:: 7.0 Instagram Area CSS 
-:: 8.0 Footer Social Area CSS 
+:: 4.0 Wellcome Area CSS
+:: 5.0 Top Feature Area CSS
+:: 6.0 Blog Area CSS
+:: 7.0 Instagram Area CSS
+:: 8.0 Footer Social Area CSS
 :: 9.0 Goole Map Area CSS
 :: 10.0 Sidebar Area CSS
 :: 11.0 Breadcumb Area CSS
@@ -47,7 +47,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: Trebuchet MS;
     position: relative;
     z-index: auto;
 }
@@ -58,7 +58,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Quicksand', sans-serif;
+    font-family: Trebuchet MS;
     font-weight: 700;
     color: #232d37;
     line-height: 1.25;
@@ -252,7 +252,7 @@ li {
 }
 
 .font-shadow-into-light {
-    font-family: 'Shadows Into Light Two', cursive !important;
+    font-family: Trebuchet MS;
 }
 
 .yummy-table {
@@ -295,6 +295,7 @@ li {
     top: calc(50% - 20px);
     width: 40px;
     z-index: 9;
+
 }
 
 @-webkit-keyframes yummy-load {
@@ -453,23 +454,37 @@ li {
     margin-bottom: 0;
     padding: 35px 0 20px 0;
     display: inline-block;
-    color: #232d37;
-}
+    color: black;
+	text-decoration : none;
+	margin-left : 0;
+	text-shadow : 2px 2px 5px #fc6c3f ;
+	}
+.logo_area.yummy-logo a:hover {
+text-decoration : none;
+cursor :text ; }
+
 
 .navbar.navbar-expand-lg {
     padding: 0;
 }
 
 .navbar.navbar-expand-lg .navbar-nav .nav-link {
-    padding: 25px 30px;
-    color: #232d37;
+    padding:  10px;
+	margin-right: 20px;
+    color: black;
     text-transform: uppercase;
     font-size: 14px;
+	font-style: bold;
 }
 
-.navbar.navbar-expand-lg .navbar-nav .nav-link:hover,
+.navbar.navbar-expand-lg .navbar-nav .nav-link:hover{
+
+	color : white;
+	background-color : black;
+}
 .navbar.navbar-expand-lg .navbar-nav .active .nav-link {
     color: #fc6c3f;
+
 }
 
 .dropdown-item {
@@ -487,7 +502,7 @@ li {
 }
 
 /* --------------------
-:: 4.0 Wellcome Area CSS 
+:: 4.0 Wellcome Area CSS
 -------------------- */
 
 .welcome-single-slide {
@@ -578,7 +593,7 @@ li {
 }
 
 /* --------------------
-:: 5.0 Top Feature Area CSS 
+:: 5.0 Top Feature Area CSS
 -------------------- */
 
 .categories_area {
@@ -626,7 +641,7 @@ li {
 }
 
 /* --------------------
-:: 6.0 Blog Area CSS 
+:: 6.0 Blog Area CSS
 -------------------- */
 
 .post-thumb img {
@@ -753,7 +768,7 @@ li {
 }
 
 /* --------------------
-:: 7.0 Instagram Area CSS 
+:: 7.0 Instagram Area CSS
 -------------------- */
 
 .instagram_gallery_item {
@@ -822,70 +837,184 @@ li {
 
 
 /* --------------------
-:: 8.0 Footer Social Area CSS 
+:: 8.0 Footer Social Area CSS
 -------------------- */
 
-.footer-social-area {
-    border-bottom: 1px solid #eeeeee;
-    padding: 50px 0;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between
+.footer-distributed{
+	background-color: black;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+    z-index : 0;
+	padding: 55px 50px;
+	margin-top: 80px;
+	padding-right :250px;
+	font-family : Trebuchet MS;
+
 }
 
-.single-icon > a {
-    color: #51545f;
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
 }
 
-.single-icon > a:hover {
-    color: #fc6c3f;
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
 }
 
-.single-icon > a > i {
-    font-size: 16px;
-    padding-right: 12px;
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font-family : Trebuchet MS;
+	font-size : 40px;
+	margin: 0;
+	padding-bottom :30px;
 }
 
-.footer-content {
-    padding: 50px 0 65px 0;
-    border-bottom: 1px solid #eeeeee;
+.footer-distributed h3 span{
+	color:  #fc6c3f;
 }
 
-.footer-logo-area .yummy-logo {
-    font-family: 'Shadows Into Light Two', cursive;
-    font-size: 60px;
-    margin-bottom: 0;
-    padding: 0 0 20px 0;
-    display: inline-block;
-    color: #232d37;
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
 }
 
-.copy_right_text {
-    width: 100%;
-    height: 70px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
 }
 
-.copy_right_text > p {
-    font-size: 14px;
-    color: #b5aec4;
-    margin-bottom: 0;
+.footer-distributed .footer-company-name{
+	color:  #fc6c3f;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
 }
 
-.footer_area .navbar.navbar-expand-lg .navbar-nav .nav-link {
-    padding-bottom: 0;
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
 }
+
+.footer-distributed .footer-center i{
+	background-color:black;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #fc6c3f;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #fc6c3f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color: black;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+
 
 /* --------------------
 :: 9.0 Goole Map Area CSS
@@ -901,183 +1030,48 @@ li {
 :: 10.0 Sidebar Area CSS
 -------------------- */
 
-/* About me */
 
-.single-widget-area {
-    margin-bottom: 50px;
-}
-
-.widget-title > h6 {
-    background: #fee2d9;
-    height: 40px;
-    width: 100%;
-    line-height: 40px;
-    border-radius: 2px;
-    margin-bottom: 30px;
-}
-
-.about-me-widget-thumb img {
-    height: 200px;
-    width: 200px;
-    margin: auto;
-    border-radius: 50%;
-}
-
-.about-me-widget h4 {
-    margin: 15px 0;
-    font-weight: 400;
-}
-
-.about-me-widget p {
-    color: #51545f;
-    margin-bottom: 0;
-}
-
-/* subscribe_follow_area */
-
-.subscribe-link > a {
-    font-size: 14px;
-    color: #51545f;
-    padding: 0 15px;
-}
-
-.subscribe-link > a:hover {
-    color: #fc6c3f;
-}
-
-.subscribe-link {
-    padding-top: 20px;
-}
-
-/* popular post */
-
-.popular-post-widget .single-populer-post img {
-    margin-right: 10px;
-    border-radius: 20px;
-    margin-bottom: 30px;
-    -ms-flex-item-align: center;
-    align-self: center;
-}
-
-.popular-post-widget .single-populer-post:last-of-type img {
-    margin-bottom: 0;
-}
-
-.popular-post-widget .single-populer-post img {
-    width: calc(50% - 10px);
-}
-
-.popular-post-widget .single-populer-post img,
-.popular-post-widget .single-populer-post .post-content {
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-}
-
-.popular-post-widget .single-populer-post .post-content {
-    margin-left: 10px;
-}
-
-.popular-post-widget .single-populer-post .post-content > p {
-    font-size: 14px;
-    color: #b5aec4;
-    font-weight: 400;
-    margin-bottom: 0;
-}
-
-/* Add Widget */
-
-.add-widget .add-widget-area {
-    position: relative;
-    z-index: 1;
-}
-
-.add-widget .add-widget-area img {
-    border-radius: 30px;
-}
-
-.add-widget .add-widget-area:before {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    content: '';
-    background-color: rgba(30, 29, 29, 0.8);
-    z-index: 1;
-    border-radius: 30px
-}
-
-.add-widget .add-text {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 5;
-}
-
-.add-widget .add-text h2,
-.add-widget .add-text p {
-    color: #fff;
-}
-
-.add-widget .add-text p {
-    font-size: 14px;
-}
-
-.add-widget .add-text a {
-    min-width: 130px;
-    height: 40px;
-    border: 1px solid #fc6c3f;
-    color: #fc6c3f;
-    font-size: 12px;
-    display: inline-block;
-    text-transform: uppercase;
-    border-radius: 30px;
-    line-height: 40px;
-}
-
-.add-widget .add-text a:hover {
-    border: 1px solid #fc6c3f;
-    color: #fff;
-    background-color: #fc6c3f;
-}
-
-/* Newsletter Widget CSS */
-
-.newsletter-widget p {
-    font-size: 14px;
-}
-
-.newsletter-form {
-    position: relative;
-    z-index: 1;
-}
-
-.newsletter-form input {
-    width: 100%;
-    height: 40px;
-    background-color: #f5f5f8;
-    border: 1px solid #e1e1e1;
-    border-radius: 30px;
-    padding: 0 20px;
-    font-size: 14px;
-    color: #b5aec4;
-}
-
-.newsletter-form button {
-    width: 40px;
-    height: 40px;
-    background-color: #fc6c3f;
-    border: none;
-    color: #fff;
-    border-radius: 30px;
-    position: absolute;
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 250px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top : 0; /* Stay at the top */
     right: 0;
-    top: 0;
-    z-index: 9;
-    cursor: pointer;
+    background-color: black; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 40px;
+	font-family : Trebuchet MS;
 }
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 10px;
+	margin : 20px;
+    text-decoration:none;
+    color: #fc6c3f;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color:black;
+	background-color:#fc6c3f;
+	text-decoration : none;
+}
+
+/* Style page content */
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}s
+
 
 /* --------------------
 :: 11.0 Breadcumb Area CSS
@@ -1201,7 +1195,7 @@ li {
     background-position: center center;
 }
 
-/* -------------------- 
+/* --------------------
 :: 14.0 Single Blog CSS
 -------------------- */
 
@@ -1436,25 +1430,50 @@ li {
     background-color: #fc6c3f;
 }
 
-/* Bg Pattern */
-.bg-pattern {
-    background-attachment: fixed;
-    background-position: center center;
-    background-image: url(img/bg-img/bg-pattern.jpg);
-    position: relative;
-    background-size: cover;
-    z-index: 1;
+/*---------------------
+10.about us
+---------------------*/
+#our-team {
+	padding-top:70px;
+	padding-bottom:70px;
 }
-.bg-pattern:after {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    content: '';
-    background-color: rgba(255, 255, 255, 0.95);
-    z-index: -1;
+
+#our-team h4 {
+	color:#fc6c3f;
+	padding-bottom : 20px;
 }
+
+#our-team .text-center {
+	padding-top:20px;
+	margin-bottom:30px;
+	padding-bottom:10px;
+}
+
+#our-team .team img {
+	display :block;
+	border-radius:50%;
+	margin-left : auto;
+	margin-right : auto;
+	max-width : 33%;
+	height : 100px;
+
+}
+
+.vin
+{
+	width:200px;
+	height:200px;
+}
+#our-team .team img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+
+
+
+
+
 
 #pattern-switcher {
 	width: 120px;
@@ -1498,6 +1517,3 @@ li {
 	color: #fff;
 	cursor: pointer;
 }
-
-
-.

@@ -10,7 +10,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>anEngineer.com-NKV </title>
+    <title>contact </title>
 
     <!-- Favicon -->
 
@@ -23,6 +23,13 @@
 
 	 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.min.css' %}">
+
+<!-- jQuery library -->
+<script src="{% static 'js/jquery/jquery-2.2.4.min.js' %}"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- Optional theme -->
@@ -30,9 +37,6 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-<!-- jQuery library -->
-
 </head>
 
 <body>
@@ -64,7 +68,7 @@
                         <div class="login_register_area d-flex">
                             {% if user.is_authenticated %}
                             <div class="login">
-                                <a href="{% url 'posts:create' %}">write a post</a>
+                                <a href="{% url 'posts:create' %}">write post</a>
                             </div>
                             <div class="register">
                                 <a href="{% url 'accounts:logout' %}">log out</a>
@@ -123,33 +127,29 @@
             </div>
         </div>
     </header>
-    <!-- ****** Header Area End ****** -->
+  <div class="contact-area section_padding_80">
+        <div class="container">
+                        <div class="single-contact-info mb-30 text-center wow fadeInUp" data-wow-delay="0.3s" >
+                            <h4>India</h4>
+                            <p>NIT Raipur,C.G Road,Raipur,Chattisgarh-492010 <br> Email:anEngineer@gmail.com <br> Phone:+91-7013225336</p>
+                        </div>
+                   <div class="copy_right_text text-center">
+                        <p>anEngineer@vkn.com All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by VKN-Startup</p>
+                    </div>
 
-    <hr>
-      <div class="row" style="min-height:900px">
-
-          <div class="col-md-8">
-
-           {% block content %}
-
-           {% endblock %}
-      </div>
-
-        <div class="col-md-4">
-            <div class="sidenav">
-                <ul>
-                    <li> <a href="#">Search by Date </a></li>
-                    <li><a href="#">Search by Branch </a></li>
-                    <li><a href="#">Search by Topic </a></li>
-                </ul>
-
-       </div>
+                   </div>
+				   </div>
 
 
-        </div>
+            <!-- Contact Form  -->
+
+    <!-- ****** Contact Area End ****** -->
 
 
+    <!-- ****** Our Creative Portfolio Area End ****** -->
 
+
+    <!-- ****** Footer Menu Area Start ****** -->
 
    <footer class="footer-distributed">
 
@@ -201,15 +201,13 @@
 		</footer>
 
     <!-- ****** Footer Menu Area End ****** -->
-<script src="{% static 'js/jquery/jquery-2.2.4.min.js' %}"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
     <!-- Jquery-2.2.4 js -->
+    <script src="{% static 'js/jquery/jquery-2.2.4.min.js' %}"></script>
     <!-- Popper js -->
     <script src="{% static 'js/bootstrap/popper.min.js' %}"></script>
     <!-- Bootstrap-4 js -->
-
+    <script src="{%static 'js/bootstrap/bootstrap.min.js' %}"></script>
     <!-- All Plugins JS -->
     <script src="{% static 'js/others/plugins.js' %}"></script>
     <!-- Active JS -->

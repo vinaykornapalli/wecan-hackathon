@@ -1,10 +1,9 @@
-from django.shortcuts import render
+
 from django.views import generic
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.urlresolvers import reverse_lazy
 from django.http import Http404
 from . import  models
-from . import forms
 from django.contrib.auth import get_user_model
 from braces.views import SelectRelatedMixin
 
@@ -30,17 +29,16 @@ class PostListTopicWise(generic.ListView,SelectRelatedMixin):
 
 class UserPosts(generic.ListView):
     model = models.Post
-    template_name = 'posts/user_post_list'
+    template_name = 'user_post_list.html'
     def get_quertset(self):
         try:
-           self.post.user = User.objects.prefetch_related('posts').get(username__iexact=self.kwargs.get('username'))
+           self.post_user = User.objects.prefetch_related('posts').get(username__iexact=self.kwargs.get('username'))
         except User.DoesNotExist:
-            raise Http404
-        else:
             return self.post_user.posts.all()
 
     def get_context_data(self,**kwargs):
         context = super().get_context_data(**kwargs)
+        print(self.post_user)
         context['post_user'] = self.post_user
         return context
 
@@ -57,14 +55,10 @@ class PostDetail(SelectRelatedMixin,generic.DetailView):
 
 
 
-    def get_queryset(self):
-        queryset = super().get_queryset()
-        return queryset.filter(user__username__iexact=self.kwargs.get('username'))
-
 
 
 class CreatePost(generic.CreateView,SelectRelatedMixin,LoginRequiredMixin):
-    fields = ('content','branch','topic')
+    fields = ('title','content','branch','topic')
     model = models.Post
 
     def form_valid(self, form):

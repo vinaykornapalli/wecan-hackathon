@@ -3,7 +3,7 @@
     <br>
     <h3>{{ post.content|safe }}</h3>
      <h5>
-    <span class="username"><a href="{% url 'posts:for_user' username = post.user.username %}"></a></span>
+    <span class="username"><a href="{% url 'posts:for_user' username = user.username %}"></a></span>
     <span class="branch"><a href="">branch:{{ post.branch }}</a></span>
     <time class="time"><a href="{% url 'posts:single' username = post.user.username pk = post.pk %}"></a></time>
      </h5>

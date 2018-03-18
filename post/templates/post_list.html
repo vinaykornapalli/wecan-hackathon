@@ -2,13 +2,11 @@
 
 
 
-
-
 {% block post_content %}
 
     <div class="container">
 
-     {% for post in posts_list %}
+     {% for post in post_list %}
          {% include "post.html" %}
     {% endfor %}
     </div>
